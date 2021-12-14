@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,14 +36,87 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span class="logo">tweeter</span>
-      <div class="container">
-        <em>Write</em> a new tweet<i class="fas fa-angle-double-down"></i>
+    <div class="header-nav">
+      <nav>
+        <span class="logo"><a href="/">tweeter</a></span>
+        <div class="sub-title">
+          <div class="title"><strong>Write</strong> a new tweet</div>
+          <div class="angle"><i class="fas fa-angle-double-down"></i></div>
+        </div>
+      </nav>
+    </div>
+    <header>
+      <div class="headerInner">
+        <div class="thumbnail">
+          <img src="/images/profile-hex.png" />
+        </div>
+        <div class="userName">
+          <h2>Your <span class="textDefault">Name</span></h2>
+        </div>
       </div>
-    </nav>
+    </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <div class="item"></div>
+      <div class="itemCenter">
+        <article class="message">
+          <div id="messageForm">
+            <div class="formGroup">
+              <label>What are you hamming about?</label>
+              <input
+                class="form-control"
+                type="text"
+                name="longURL"
+                placeholder="http://"
+              />
+            </div>
+            <div class="countText">
+              <button type="submit" class="btn btn-primary btn-block">
+                Tweet
+              </button>
+              <div class="countText">140</div>
+            </div>
+          </div>
+        </article>
+        <article class="messageBox">
+          <div class="userCard">
+            <div class="userCardBody">
+              <div class="userCardHeader">
+                <div class="userIconOne">
+                  <img src="/images/profile-hex.png" />
+                </div>
+                <div class="userNameOne">Mikiyoshi Kokura</div>
+                <div class="userIdOne">@Miki</div>
+              </div>
+              <div class="userCardMain">
+                <div class="userMessageOne">Hello world!</div>
+              </div>
+              <div class="userCardFooter">
+                <div class="userDateOne">
+                  <span class="userDaysOne">10</span> days ago
+                </div>
+
+                <div class="userSocialOne">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fas fa-flag"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-retweet"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="item"></div>
+    </main>
+    <footer></footer>
   </body>
 </html>
