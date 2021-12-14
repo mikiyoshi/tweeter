@@ -8,7 +8,11 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
+<<<<<<< HEAD
     "created_at": 1639343931990
+=======
+    "created_at": 1639342678950
+>>>>>>> form
   },
   {
     "user": {
@@ -19,6 +23,10 @@
     "content": {
       "text": "Je pense , donc je suis"
     },
+<<<<<<< HEAD
     "created_at": 1639430331990
+=======
+    "created_at": 1639429078950
+>>>>>>> form
   }
 ]
