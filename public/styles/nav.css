@@ -1,0 +1,13 @@
+nav {
+  height: 120px;
+  background-color: #4056a1;
+  color: #ffffff;
+  padding: 0 1.5em;
+  display: flex;
+}
+.logo {
+  font-family: 'Bungee', cursive;
+}
+.container {
+  justify-content: flex-end;
+}
