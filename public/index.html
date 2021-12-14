@@ -65,9 +65,9 @@
           <form action="/tweets" method="POST">
             <label for="tweet-text">What are you humming about?</label>
             <textarea name="text" id="tweet-text"></textarea>
-            <div>
-              <button type="submit">Tweet</button>
-              <output name="counter" class="counter" for="tweet-text"
+            <div class="tweetCounter">
+              <button id="update-button" type="submit">Tweet</button>
+              <output name="counter" id="count-update" for="tweet-text"
                 >140</output
               >
             </div>
@@ -132,5 +132,9 @@
       <div class="item"></div>
     </main>
     <footer></footer>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </body>
 </html>

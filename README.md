@@ -10,8 +10,9 @@ This repository is the starter code for the project: Students will fork and clon
 2. Clone your repository onto your local device.
 3. Install dependencies using the `nvm install v12` command.
 4. Install dependencies using the `npm install` command.
-5. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-6. Go to <http://localhost:8080/> in your browser.
+5. Install dependencies using the `npm install express` command.
+6. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+7. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
 
