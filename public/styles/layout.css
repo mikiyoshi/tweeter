@@ -30,11 +30,6 @@ body {
   display: flex;
 }
 
-.item {
-  /* height: 100px;
-  width: 100px; */
-}
-
 .itemCenter {
   flex: 1;
 }
