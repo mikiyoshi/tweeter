@@ -108,4 +108,16 @@ $(document).ready(function () {
     });
     event.preventDefault();
   });
+
+  const loadTweets = function () {
+    const $button = $('#update-button');
+    $button.on('click', function () {
+      console.log('Button clicked, performing ajax call...');
+      $.ajax('/tweets', { method: 'GET' }).then(function (jsonData) {
+        console.log('Success: ', jsonData);
+        // $button.replaceWith(morePostsHtml);
+      });
+    });
+  };
+  loadTweets();
 });
