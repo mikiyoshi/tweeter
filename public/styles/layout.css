@@ -38,3 +38,99 @@ body {
 .item {
   flex: 0 0 5%;
 }
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+}
+.new-tweet label {
+  display: block;
+}
+.new-tweet textarea {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  resize: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #888;
+}
+.new-tweet .tweetCounter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 0.5em;
+  align-items: baseline;
+}
+.new-tweet .tweetCounter button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #4056a1;
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  font-size: large;
+}
+.new-tweet .tweetCounter button:hover {
+  cursor: pointer;
+}
+.new-tweet .tweetCounter #count-update {
+  margin-left: auto;
+  font-family: 'Bungee', cursive;
+  font-size: large;
+}
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 5px solid #888;
+  margin: 2em 0;
+  padding: 1em;
+}
+.messageBox .userCard {
+}
+.messageBox .userCard .userCardBody {
+}
+.messageBox .userCard .userCardHeader {
+  display: block;
+  display: flex;
+  flex-direction: row;
+}
+.messageBox .userCard .userCardHeader .userIcon {
+  width: 50px;
+}
+.messageBox .userCard .userCardHeader .userName {
+}
+.messageBox .userCard .userCardHeader .userId {
+  margin-left: auto;
+}
+.messageBox .userCard .userCardMain {
+  display: block;
+}
+.messageBox .userCard .userCardMain .userMessage {
+  line-height: 2;
+  border-bottom: 5px solid #888;
+}
+.messageBox .userCard .userCardFooter {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: large;
+}
+.messageBox .userCard .userCardFooter .userDate {
+}
+.messageBox .userCard .userCardFooter .userDays {
+}
+.messageBox .userCard .userCardFooter .userSocial {
+  margin-left: auto;
+}
+.messageBox .userCard .userCardFooter .userSocial ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.messageBox .userCard .userCardFooter .userSocial li {
+  margin-left: 0.5em;
+}
