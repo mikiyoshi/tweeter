@@ -1,4 +1,5 @@
 node_modules/
 ajax/
+lecture/
 .env
 .DS_Store
