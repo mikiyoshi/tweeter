@@ -25,3 +25,40 @@ This repository is the starter code for the project: Students will fork and clon
 2. font-awesome
 3. jquery
 4. timeago.js
+
+# SASS install
+
+```
+nvm install v12
+```
+
+```
+npm install -g sass
+```
+
+```
+npm init
+```
+
+```
+mkdir sass
+```
+
+```
+mkdir public
+```
+
+```
+mkdir public/styles
+```
+
+npm init made package.json file
+add "script" in package.json file
+"sass-watch": "sass sass:public/styles --watch --poll --no-source-map",
+this means sass folder create CSS to public/styles folder
+
+```
+npm run sass-watch
+```
+
+automatically create CSS file
