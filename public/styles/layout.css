@@ -36,10 +36,6 @@ body {
   margin-right: 5%;
   flex: 70%;
 }
-
-.itemCenter {
-}
-
 .new-tweet {
   display: flex;
   flex-direction: column;
@@ -105,23 +101,16 @@ body {
   margin-bottom: 2em;
   padding: 1em;
 }
-.messageBox .userCard .userCardBody {
-}
 .messageBox .userCard .userCardHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.messageBox .userCard .userCardHeader .userIcon {
 }
 .messageBox .userCard .userCardHeader .userName {
   margin-left: 0.5em;
 }
 .messageBox .userCard .userCardHeader .userId {
   margin-left: auto;
-}
-.messageBox .userCard .userCardMain {
-  /* display: block; */
 }
 .messageBox .userCard .userCardMain .userMessage {
   line-height: 2;
@@ -135,10 +124,6 @@ body {
   flex-direction: row;
   align-items: baseline;
   font-size: large;
-}
-.messageBox .userCard .userCardFooter .userDate {
-}
-.messageBox .userCard .userCardFooter .userDays {
 }
 .messageBox .userCard .userCardFooter .userSocial {
   margin-left: auto;
@@ -174,8 +159,6 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .messageBox .userCard .userCardHeader .userIcon {
-  }
   .messageBox .userCard .userCardHeader .userName {
     margin-left: 0;
   }
@@ -200,8 +183,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .messageBox .userCard .userCardHeader .userIcon {
   }
   .messageBox .userCard .userCardHeader .userName {
     margin-left: 0;
@@ -228,8 +209,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .messageBox .userCard .userCardHeader .userIcon {
   }
   .messageBox .userCard .userCardHeader .userName {
     margin-left: 0;
