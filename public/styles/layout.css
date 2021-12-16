@@ -46,6 +46,16 @@ body {
 .new-tweet label {
   display: block;
 }
+.new-tweet #resultPost.alert {
+  display: block;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .new-tweet textarea {
   display: block;
   width: 100%;
@@ -55,6 +65,9 @@ body {
   border-left: none;
   border-right: none;
   border-bottom: 5px solid #888;
+  margin-top: 1em;
+  padding: 0.5em;
+  line-height: 1.5;
 }
 .new-tweet .tweetCounter {
   display: flex;
@@ -84,11 +97,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 5px solid #888;
-  margin: 2em 0;
-  padding: 1em;
+  margin-top: 2em;
 }
 .messageBox .userCard {
+  border: 5px solid #888;
+  margin-bottom: 2em;
+  padding: 1em;
 }
 .messageBox .userCard .userCardBody {
 }
@@ -96,11 +110,12 @@ body {
   display: block;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .messageBox .userCard .userCardHeader .userIcon {
-  width: 50px;
 }
 .messageBox .userCard .userCardHeader .userName {
+  margin-left: 0.5em;
 }
 .messageBox .userCard .userCardHeader .userId {
   margin-left: auto;

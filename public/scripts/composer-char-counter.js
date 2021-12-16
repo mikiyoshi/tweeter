@@ -23,6 +23,12 @@ $(document).ready(function () {
       // then <output id="count-update">
       // then add class="red" @ <output id="count-update">
       // then replace inside html which means text
+    } else if (tweetCount < 140) {
+      const $findCounter = $(this)
+        .siblings('.tweetCounter')
+        .find('#count-update')
+        .removeClass('red')
+        .html(140 - tweetCount);
     }
     const $findCounter = $(this)
       .siblings('.tweetCounter')
