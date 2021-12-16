@@ -104,7 +104,7 @@ $(document).ready(function () {
       $('label')
         .siblings('#resultPost')
         .addClass('alert')
-        .text("You can't TWEET empty message")
+        .text(" You can't TWEET empty message")
         .show();
       // $('#resultPost').text("You can't TWEET empty message").show();
       // console.log(str);

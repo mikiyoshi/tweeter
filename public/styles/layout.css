@@ -21,6 +21,8 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: row;
 }
 .red {
   color: #ff0000;
@@ -29,14 +31,13 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 .container {
-  display: flex;
+  margin-top: 120px;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex: 70%;
 }
 
 .itemCenter {
-  flex: 1;
-}
-.item {
-  flex: 0 0 5%;
 }
 
 .new-tweet {
@@ -107,7 +108,6 @@ body {
 .messageBox .userCard .userCardBody {
 }
 .messageBox .userCard .userCardHeader {
-  display: block;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -121,11 +121,13 @@ body {
   margin-left: auto;
 }
 .messageBox .userCard .userCardMain {
-  display: block;
+  /* display: block; */
 }
 .messageBox .userCard .userCardMain .userMessage {
   line-height: 2;
   border-bottom: 5px solid #888;
+  white-space: normal;
+  word-break: break-all;
 }
 .messageBox .userCard .userCardFooter {
   display: block;
@@ -148,4 +150,92 @@ body {
 }
 .messageBox .userCard .userCardFooter .userSocial li {
   margin-left: 0.5em;
+}
+
+/* Smartphones: minimum width of 320px to maximum width of around 420px */
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  /* Write smartphone only styles here */
+}
+
+/* Another smartphone breakpoint is maximum width of around 420px */
+@media only screen and (max-width: 420px) {
+  /* Write smartphone only styles here */
+  body {
+    flex-direction: column;
+  }
+  /* Write Tablet only CSS here */
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .messageBox .userCard .userCardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .messageBox .userCard .userCardHeader .userIcon {
+  }
+  .messageBox .userCard .userCardHeader .userName {
+    margin-left: 0;
+  }
+  .messageBox .userCard .userCardHeader .userId {
+    margin-left: 0;
+    align-items: baseline;
+  }
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+  /* Write Tablet only CSS here */
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .messageBox .userCard .userCardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .messageBox .userCard .userCardHeader .userIcon {
+  }
+  .messageBox .userCard .userCardHeader .userName {
+    margin-left: 0;
+  }
+  .messageBox .userCard .userCardHeader .userId {
+    margin-left: 0;
+    align-items: baseline;
+  }
+}
+
+/* Another tablet breakpoint is maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  /* Write CSS rules that target Tablets screen sizes downwards - including smartphones */
+  body {
+    flex-direction: column;
+  }
+  /* Write Tablet only CSS here */
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .messageBox .userCard .userCardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .messageBox .userCard .userCardHeader .userIcon {
+  }
+  .messageBox .userCard .userCardHeader .userName {
+    margin-left: 0;
+  }
+  .messageBox .userCard .userCardHeader .userId {
+    margin-left: 0;
+    align-items: baseline;
+  }
 }
