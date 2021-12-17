@@ -48,13 +48,13 @@ $(document).ready(function () {
                 <div class="userSocial">
                   <ul>
                     <li>
-                      <a href="#"><i class="fas fa-flag"></i></a>
+                      <a href="javascript:void(0);"><i class="fas fa-flag"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fas fa-retweet"></i></a>
+                      <a href="javascript:void(0);"><i class="fas fa-retweet"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="javascript:void(0);"><i class="fas fa-heart"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -80,32 +80,34 @@ $(document).ready(function () {
     event.preventDefault();
     const str = $('form').serialize();
     if ($('#tweet-text').val() === '') {
-      $('label')
-        .siblings('#resultPost')
-        .addClass('alert')
+      $('form')
+        .children('#resultPost')
+        .addClass('alert fas fa-exclamation-triangle')
         .text(" You can't TWEET empty message")
         .show();
     } else if ($('#tweet-text').val().length > 140) {
-      $('label')
-        .siblings('#resultPost')
-        .addClass('alert')
+      $('form')
+        .children('#resultPost')
+        .addClass('alert fas fa-exclamation-triangle')
         .text("You can't TWEET over 140 text message")
         .show();
     } else if ($('#tweet-text').val().length <= 140) {
-      $('label')
-        .siblings('#resultPost')
-        .addClass('alert')
-        .text('Please click TWEET button')
-        .show();
+      $('#tweet-text').change(function () {
+        // alert("text area changed");
+        $('form')
+          .children('#resultPost')
+          .addClass('alert fas fa-exclamation-triangle')
+          .text('Please click TWEET button')
+          .show();
+      });
+      $.post(
+        '/tweets', // url
+        str // data to be submit
+      ).then(function () {
+        console.log('all the load function', str);
+        loadTweets(str);
+      });
       $('#tweet-text').val('');
     }
-
-    $.post(
-      '/tweets', // url
-      str // data to be submit
-    ).then(function () {
-      console.log('all the load function', str);
-      loadTweets(str);
-    });
   });
 });

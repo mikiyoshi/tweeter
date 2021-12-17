@@ -52,6 +52,12 @@ body {
   padding: 0.75rem 1.25rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.new-tweet #resultPost.fas::before {
+  font-weight: 700;
+  font-family: 'Font Awesome 6 Free';
 }
 .new-tweet textarea {
   display: block;
