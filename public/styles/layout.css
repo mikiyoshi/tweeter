@@ -101,6 +101,10 @@ body {
   margin-bottom: 2em;
   padding: 1em;
 }
+.messageBox .userCard:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px #888888;
+}
 .messageBox .userCard .userCardHeader {
   display: flex;
   flex-direction: row;
